@@ -1,6 +1,0 @@
-{
-  "name": "Kalavapudi Krishnamacharyulu Memorial Charitable and Dharma Trust",
-  "description": "Official website of Kalavapudi Krishnamacharyulu Memorial Charitable and Dharma Trust (Registered 2026, 80G & FCRA Compliant) featuring temple support programs, community welfare, donations, and automated receipt generation.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
