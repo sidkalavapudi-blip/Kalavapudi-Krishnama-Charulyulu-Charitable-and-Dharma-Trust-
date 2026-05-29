@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Marcellus&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cormorant Garamond", "Marcellus", Georgia, Cambria, serif;
+  --font-serif: "Cinzel", "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-saffron-50: #fffaf0;
+  --color-saffron-100: #feebc8;
+  --color-saffron-500: #dd6b20;
+  --color-saffron-600: #c05621;
+}
+
+/* Print specific styles for printing official compliance receipts neatly */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable_receipt_visual, #printable_receipt_visual * {
+    visibility: visible;
+  }
+  #printable_receipt_visual {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+  }
+}
+
